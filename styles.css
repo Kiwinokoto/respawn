@@ -1,14 +1,4 @@
 /* General Reset */
-body,
-h1,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .bump {
     margin-top: 1rem;
 }
@@ -16,12 +6,17 @@ li {
 body {
     font-family: Arial, sans-serif;
     background-color: #1a1a1a;
-    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body p {
+    margin: 0;
 }
 
 .container {
@@ -33,24 +28,43 @@ body {
 /* Logo Positioned in Top-Left */
 .logo {
     position: absolute;
-    top: 1em;
-    left: 1em;
-    font-size: 2.5em;
-    color: #ff4500;
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Arranges items in a column */
+    align-items: center; /* Centers items vertically */
+    justify-content: flex-start; /* Ensures space between the logo and the time button */
+    gap: 1rem; /* Optional: Adds spacing between the elements */
+    top: 1rem;
+    left: 1rem;
+    text-align: center;
 }
 
 .logo h1 {
     margin: 0;
-    font-size: inherit;
+    font-size: 2.5rem;
+    color: #ff4500;
     font-family: 'Arial Black', Arial, sans-serif;
+}
+
+/* Unpause */
+.time {
+    font-weight: bold;
+    font-size: 4rem;
+    width: 4rem;
+    max-height: 4rem;
+    border: 2px solid gold;
+    color: gold;
+}
+
+.credit {
+    color: gold;
 }
 
 /* Perso Positioned in Top-Right */
 .perso {
     position: absolute;
-    top: 1em;
-    right: 1em;
-    font-size: 1.5em;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
 }
 
 .perso a {
@@ -67,8 +81,9 @@ body {
 
 /* Important Messages */
 .important {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: red;
 }
 
 .important a {
@@ -85,7 +100,7 @@ body {
 
 .blinking {
     text-decoration: none;
-    color: gold;
+    color: red;
     font-weight: bold;
     animation: blink 1s infinite;
 }
@@ -104,16 +119,16 @@ body {
 /* Menu Options */
 .menu-options ul {
     list-style-type: none;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 .menu-options li {
-    margin: 1em 0;
+    margin: 1rem 0;
 }
 
 .menu-options a {
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: #00bfff;
     transition: color 0.3s;
 }

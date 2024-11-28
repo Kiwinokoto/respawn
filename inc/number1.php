@@ -8,6 +8,7 @@ $_SESSION["number1"] =
     "number" => 1,
     "job" => "Rebirth specialist",
     "lvl" => 1,
+    "credit" => 148,
     "started" => 1 // day ago
 ];
 
